@@ -1,0 +1,35 @@
+<Directory "c:/wamp/www/">
+    Options Indexes FollowSymLinks
+    AllowOverride all
+    Order Deny,Allow
+    Deny from all
+    Allow from 127.0.0.1
+</Directory>
+<Directory "c:/wamp/apps/phpmyadmin3.4.5/">
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride all
+        Order Deny,Allow
+        Deny from all
+        Allow from 127.0.0.1
+</Directory>
+
+AllowOverride All
+Order allow,deny
+Allow from all
+
+httpd.conf--------
+
+<Directory />
+  Options FollowSymLinks
+  AllowOverride None
+  Order deny,allow
+  Allow from all
+</Directory>
+
+Also, I inserted the following lines in http-vhosts.conf:
+
+<VirtualHost 192.168.178:8080>
+    DocumentRoot "C:/wamp/www/project"
+</VirtualHost>
+
+Listen 192.168.178.3:8080

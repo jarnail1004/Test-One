@@ -18,6 +18,11 @@
  * See COPYING.txt for license details.
  */
 
+
+/*
+ * This is LIVE UPDATED TO CHECK 
+ *
+ * */
 try { //This is my test
     require __DIR__ . '/app/bootstrap.php';
 } catch (\Exception $e) {
@@ -32,6 +37,8 @@ try { //This is my test
 HTML;
     exit(1);
 }
+
+
 
 $bootstrap = \Magento\Framework\App\Bootstrap::create(BP, $_SERVER);
 /** @var \Magento\Framework\App\Http $app */

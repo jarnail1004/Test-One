@@ -18,7 +18,17 @@
  * See COPYING.txt for license details.
  */
 
-try { //This is my test
+class {
+	__construct ($cartID) {
+		echo $cartID; 
+	}
+	
+}
+	
+	
+	
+	
+ try { 
     require __DIR__ . '/app/bootstrap.php';
 } catch (\Exception $e) {
     echo <<<HTML
